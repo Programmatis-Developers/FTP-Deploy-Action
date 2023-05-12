@@ -3,7 +3,6 @@ name: FTPS Test
 on:
   push:
     branches: [brian]
-
 jobs:
   deploy:
     name: 🚀 Deploy website every commit
