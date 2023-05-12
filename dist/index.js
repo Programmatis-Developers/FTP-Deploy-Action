@@ -3279,7 +3279,7 @@ function deploy(args, logger, timings) {
         logger.all(`by giving it a ⭐ on Github --> https://github.com/SamKirkland/FTP-Deploy-Action`);
         logger.all(`or add a badge 🏷️ to your projects readme --> https://github.com/SamKirkland/FTP-Deploy-Action#badge`);
         logger.verbose(`Using the following excludes filters: ${JSON.stringify(args.exclude)}`);
-   	logger.all(JSON.stringify(localFiles_1));
+   	    logger.all(JSON.stringify(localFiles_1.getLocalFiles));
         timings.start("hash");
         const localFiles = yield (0, localFiles_1.getLocalFiles)(args);
         timings.stop("hash");
